@@ -12,9 +12,15 @@ You will need the following things properly installed on your computer.
 * [Bower](http://bower.io/)
 * [Ember CLI](http://www.ember-cli.com/)
 * [PhantomJS](http://phantomjs.org/)
+* [EmberFire] (https://github.com/firebase/emberfire)
+* [Firebase](https://www.firebase.com/docs/)
+* [omdb](https://www.omdbapi.com/)
+* [torrii Adapter]
 
 ## Installation
 
+* Setup Firebase host with auth and db rules
+* Install & setup Emberfire
 * `git clone <repository-url>` this repository
 * change into the new directory
 * `npm install`
@@ -41,7 +47,7 @@ Make use of the many generators for code, try `ember help generate` for more det
 
 ### Deploying
 
-Specify what it takes to deploy your app.
+After ember build is complete the compressed files will be stored in /dist. Deploy the contents of /dist to your firebase server.
 
 ## Further Reading / Useful Links
 
