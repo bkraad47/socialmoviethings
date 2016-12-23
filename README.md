@@ -1,7 +1,8 @@
-# Newscred
+# Newscred - Social Movie Things
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+# Link - https://newscred-47c45.firebaseapp.com/
+
+This is a simple social movie rating's app. Share your thoughts on movies and get reccomendations on whats popular.
 
 ## Prerequisites
 
