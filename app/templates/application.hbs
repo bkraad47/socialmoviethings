@@ -1,3 +1,20 @@
-<h2 id="title">Welcome to Ember</h2>
-
-{{outlet}}
+{{#if session.isAuthenticated}}
+  <nav>
+  <ul>
+    
+    <li><a href="/search">-Search and Add Movie From OMDB-</a></li><br/>
+	<li><a href="/user">-User Preferences-</a></li><br/>
+	<li><a href="/watched">-Movies Youve Watched-</a></li><br/>
+	<li><a href="/recomend">-Reccomendations-</a></li><br/>
+	<li><a href="/oboxrecomend">-Out Of The Box Reccomendations-</a></li><br/>
+    <li>Logged in as {{session.currentUser.displayName}}<button {{action "signOut"}}>Sign out</button></li>
+  </ul>
+</nav>
+  <article>
+  {{outlet}}
+  </article>
+{{else}}
+<br/>
+<br/>
+  <button {{action "signIn" "google"}}>Sign in with Google</button>
+{{/if}}

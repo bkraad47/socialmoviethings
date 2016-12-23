@@ -1,0 +1,11 @@
+<section>
+{{#each smodel as |watchlist|}}
+   <br/>
+  
+  <a href="/result/i/{{watchlist.imdbID}}"><img src={{watchlist.poster}}>
+  <p>{{watchlist.title}}</p></a><p>Last Watched On:{{watchlist.lastwatched}}</p>
+  <br/>
+  <br/>
+{{/each}}
+</section>
+{{outlet}}

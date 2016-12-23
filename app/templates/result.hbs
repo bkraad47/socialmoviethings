@@ -1,0 +1,39 @@
+
+{{#if model}}
+<section>
+
+  <img src={{model.poster}}/>
+  <h2>{{model.title}}</h2>
+  <p>Genre:{{model.genre}}</p>
+  <p>Year:{{model.year}}</p>
+  <p>Actors:{{model.actors}}</p>
+  <p>Directors:{{model.director}}</p>
+  <p>Plot:{{model.plot}}</p>
+  <p>IMDB Rating (Lets ignore rotten tomatoes):{{model.imdbRating}}</p>
+  <p>Our Rating:<p id="rating">{{model.rating}}</p></p>
+  
+  
+  <select id="rating_mov">
+  <option value="0">0</option>
+  <option value="1">1</option>
+  <option value="2">2</option>
+  <option value="3">3</option>
+  <option value="4">4</option>
+  <option value="5">5</option>
+ </select>
+   <br/>
+   <button {{action "rateMovie" model.imdbID }}>Rate!!</button>
+   <br/> <br/>
+  
+  <p>Our Views:<p id="views">{{model.views}}</p></p>
+  
+  <br/>
+   <button {{action "addWatchList" model.imdbID }}>Add to Watchlist</button>
+
+</section>
+{{else}}
+
+<p>No movie found</p>
+
+{{/if}}
+{{outlet}}
