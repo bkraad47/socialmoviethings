@@ -1,4 +1,4 @@
-# Newscred - Social Movie Things
+# Social Movie Things
 
 # Link - https://newscred-47c45.firebaseapp.com/
 
